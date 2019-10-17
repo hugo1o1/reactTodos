@@ -1,4 +1,4 @@
-export default (state, action) => {
+const todos = (state = [], action) => {
     switch (action.type) {
         case 'ADD_TODO':
             return [
@@ -16,7 +16,6 @@ export default (state, action) => {
         default:
             return state
     }
-
 }
 
-
+export default todos
